@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="App_id">ca-app-pub-5698279070549046~5016302391</string>
+    <string name="bannerappid">ca-app-pub-5698279070549046/9238193404</string>
+    <string name="bannerappid1">ca-app-pub-5698279070549046/4656267797</string>
+    <string name="bannerappid2">ca-app-pub-5698279070549046/2939436419</string>
+    <string name="bannerappid3">ca-app-pub-5698279070549046/4512797567</string>
+    <string name="bannerappid4">ca-app-pub-5698279070549046/8471798847</string>
+    <string name="bannerappid5">ca-app-pub-5698279070549046/4608150423</string>
+    <string name="rewardedvideo">ca-app-pub-5698279070549046/7303021558</string>
+</resources>

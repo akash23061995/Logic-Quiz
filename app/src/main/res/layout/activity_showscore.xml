@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="com.aks.quiz.Showscore">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:weightSum="3"
+    android:layout_weight="1"
+    >
+    <android.support.v7.widget.CardView
+    android:layout_width="0dp"
+        android:layout_weight="2"
+    android:layout_height="250dp"
+
+        >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/poorarrow"
+        android:id="@+id/perfromarrow"
+
+        />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_weight="1"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:text="SCORE"
+            android:textColor="#00B0FF"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:textSize="40sp"
+            />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="35sp"
+           android:text="45"
+           android:id="@+id/scoremark"
+           android:gravity="center"
+           />
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Hello Akash"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="35sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/showname"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="Try Again"
+            android:textColor="@android:color/white"
+            android:onClick="tryagain"
+            android:background="@drawable/buttonedge"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Home"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@android:color/white"
+            android:onClick="home"
+            android:background="@drawable/buttonedge"
+
+            />
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adUnitId="@string/bannerappid5"
+        ads:adSize="BANNER"
+        android:layout_gravity="center_horizontal"
+
+        >
+    </com.google.android.gms.ads.AdView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+         >
+
+        <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:layout_weight="1"
+
+    android:src="@drawable/porrman"
+    android:id="@+id/manimage"
+    />
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    >
+<LinearLayout
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aks.quiz.MainActivity">
+  <com.google.android.gms.ads.AdView
+      android:id="@+id/adView4"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      ads:adUnitId="@string/bannerappid4"
+      ads:adSize="SMART_BANNER"
+      android:layout_gravity="center_horizontal"
+
+      >
+  </com.google.android.gms.ads.AdView>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_gravity="center"
+    >
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:fontFamily="sans-serif-condensed"
+      android:text="Enter Your Name"
+      android:textColor="#00B0FF"
+      android:textSize="40sp"
+      android:layout_marginTop="20dp"/>
+
+  <EditText
+      android:id="@+id/nameedittext"
+      android:layout_width="300dp"
+      android:layout_height="50dp"
+
+      android:inputType="textPersonName"
+      android:maxLines="1" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+  <com.google.android.gms.ads.AdView
+    android:id="@+id/adView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    ads:adUnitId="@string/bannerappid"
+    ads:adSize="SMART_BANNER"
+  android:layout_gravity="center_horizontal"
+
+    >
+</com.google.android.gms.ads.AdView>
+  <com.google.android.gms.ads.AdView
+      android:id="@+id/adView1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      ads:adUnitId="@string/bannerappid1"
+      ads:adSize="SMART_BANNER"
+      android:layout_gravity="center_horizontal"
+
+      >
+  </com.google.android.gms.ads.AdView>
+  <com.google.android.gms.ads.AdView
+      android:id="@+id/adView2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      ads:adUnitId="@string/bannerappid2"
+      ads:adSize="SMART_BANNER"
+      android:layout_gravity="center_horizontal"
+
+      >
+  </com.google.android.gms.ads.AdView>
+</LinearLayout>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/mainimg"
+        android:onClick="startAnotherActivity"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:fontFamily="casual"
+        android:text="Click"
+        android:textColor="@android:color/white"
+        android:textSize="35dp" />
+
+
+  </RelativeLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@android:color/background_dark"
+        android:orientation="vertical"
+        tools:context="com.aks.quiz.Quizactivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="Name:"
+                    android:textSize="40sp"
+
+                    android:textColor="#00E5FF"
+                    />
+
+                <TextView
+
+                    android:id="@+id/nameplayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+
+                    android:textColor="#00E676"
+                    android:text=""
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="Score:"
+                    android:textColor="#00E5FF"
+                    android:textSize="40sp" />
+
+                <TextView
+
+                    android:id="@+id/scoreplayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="#00E676"
+                    android:fontFamily="casual"
+                    android:text="0"
+                    android:textSize="40sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:weightSum="7">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="4"
+                android:fontFamily="monospace"
+                android:text="Question 1"
+                android:textColor="#00bcd4"
+                android:paddingLeft="15dp"
+                android:id="@+id/quesno"
+                android:textSize="30sp"
+                android:background="@android:color/background_dark"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:fontFamily="monospace"
+                android:text="Time"
+                android:paddingLeft="15dp"
+                android:background="#000000"
+                android:textColor="#00BCD4"
+                android:textSize="30sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="25"
+                android:textSize="30sp"
+                android:textColor="#D50000"
+                android:id="@+id/timeleft"
+                android:background="@android:color/background_dark"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:text=""
+            android:textColor="#00BCD4"
+            android:textSize="20sp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="4"
+    >
+        <RadioGroup
+            android:id="@+id/myRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            >
+
+
+            <RadioButton
+                android:id="@+id/option1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text=" 21"
+                android:buttonTint="@color/colorAccent"
+                android:textColor="#00BCD4"
+                android:textSize="20sp"
+
+
+            />
+
+            <RadioButton
+                android:id="@+id/option2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text=" 21"
+                android:buttonTint="@color/colorAccent"
+                android:textColor="#00BCD4"
+                android:textSize="20sp"
+
+                />
+
+            <RadioButton
+                android:id="@+id/option3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text=" 21"
+                android:textColor="#00BCD4"
+                android:buttonTint="@color/colorAccent"
+                android:textSize="20sp"
+
+                />
+
+            <RadioButton
+                android:id="@+id/option4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:buttonTint="@color/colorAccent"
+                android:text=" 21"
+                android:textColor="#00BCD4"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+</LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I'm Sure"
+            android:layout_gravity="center_horizontal"
+            android:onClick="getAnswer"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonedge1"
+             android:id="@+id/imsure"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@android:color/background_dark"
+            android:src="@drawable/brain"
+
+            />
+    </LinearLayout>
+</ScrollView>
